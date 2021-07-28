@@ -1,0 +1,2 @@
+class LessThanZeroException(ValueError):
+    pass
