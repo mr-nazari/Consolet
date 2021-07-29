@@ -10,7 +10,11 @@ def command(params: dict, not_found=False):
             for k, v in params.items():
                 if k in argv:
                     try:
-                        results[k] = argv[argv.index(k)+1]
+                        next_arg = argv[argv.index(k)+1]
+                        if next_arg not in params:
+                            results[k] = next_arg
+                        else:
+                            results[k] = v
                     except:
                         results[k] = v
                 else:
