@@ -94,15 +94,17 @@ class CommandParser:
             self.results = results
         return results
 
-    def get_item(self, *args, is_run_func: bool = False):
+    def get_item(self, *args, is_run_func: bool = False, func_args=None):
+        if func_args is None:
+            func_args = []
         try:
             res = self.results
             for i in args:
                 res = res[i]
             if is_run_func:
-                return res()
+                return res(*func_args)
             return res
-        except TypeError:
+        except:
             return None
 
 

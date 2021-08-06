@@ -9,6 +9,9 @@ __pycache__/
 # PyCharm IDEA
 .idea/
 
+# Hand Writted Test
+hand-test.py
+
 # Distribution / packaging
 .Python
 build/
