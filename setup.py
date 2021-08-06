@@ -8,11 +8,12 @@ setuptools.setup(
     version="0.0.1",
     author="Ali Nazari",
     author_email="alinazarigh110@gamil.com",
-    description="Create your console applications easy and powerful.",
+    description="Create your console applications easy and powerful 💥",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/mr-nazari/Consolet",
     project_urls={
+        "Github": "https://github.com/mr-nazari/Consolet",
         "Bug Tracker": "https://github.com/mr-nazari/Consolet/issues",
     },
     classifiers=[

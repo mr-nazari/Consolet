@@ -1,7 +1,7 @@
 import os
 from .utils import is_windows
 
-WINDOWS_COLOR_SET = {
+COLOR_SET = {
     # Standard Colors
     "black": "0",
     "blue": "1",
@@ -50,13 +50,13 @@ class Color:
 
         if back_code is not None:
             back_code = back_code.lower().replace(" ", "_")
-            back_code = WINDOWS_COLOR_SET.get(
-                back_code, WINDOWS_COLOR_SET.get("black")
+            back_code = COLOR_SET.get(
+                back_code, COLOR_SET.get("black")
             )
         if fore_code is not None:
             fore_code = fore_code.lower().replace(" ", "_")
-            fore_code = WINDOWS_COLOR_SET.get(
-                fore_code, WINDOWS_COLOR_SET.get("white")
+            fore_code = COLOR_SET.get(
+                fore_code, COLOR_SET.get("white")
             )
 
         if is_windows():
